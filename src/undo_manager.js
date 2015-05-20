@@ -41,6 +41,11 @@
       var that      = this,
           doc       = this.composer.sandbox.getDocument(),
           lastKey;
+
+      dom.observe(this.element, "click", function(event) {
+          console.log("we can insert a transact here");
+          that.transact()
+      });
           
       // Catch CTRL+Z and CTRL+Y
       dom.observe(this.element, "keydown", function(event) {

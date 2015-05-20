@@ -7640,7 +7640,6 @@ wysihtml5.commands.redo = {
           lastKey;
 
       dom.observe(this.element, "click", function(event) {
-          console.log("we can insert a transact here");
           that.transact()
       });
           
